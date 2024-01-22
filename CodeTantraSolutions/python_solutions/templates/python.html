@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ol>
+{% for x in context %}
+    <li>
+        <h1>{{x.Unit}}</h1>
+        <h1>{{x.Question}}<h1>
+        <p>{{x.Answer}}</p>
+    </li>
+{% endfor %}
+</ol>
+{% endblock content %}
